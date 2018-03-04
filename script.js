@@ -30,8 +30,14 @@ function setDatabase(percentages, user) {                                       
     "archer": $('#editArcher').val(),
     "wallbreaker": $('#editWallBreaker').val(),
     "giant": $('#editGiant').val(),
-    "goblin": $('#editGoblin').val()
-
+    "goblin": $('#editGoblin').val(),
+    "baloon": $('#editBaloon').val(),
+    "wizard": $('#editWizard').val(),
+    "healer": $('#editHealer').val(),
+    "dragon": $('#editDragon').val(),
+    "peka": $('#editPeka').val(),
+    "babydragon": $('#editBabyDragon').val(),
+    "miner": $('#editMiner').val()
   });
   reloadContent(user);                                                                  // reload page contents due to values changing
 }
@@ -65,6 +71,14 @@ function reloadContent(user) {
     $('#wallBreaker').html(snapval.wallbreaker);
     $('#giant').html(snapval.giant);
     $('#goblin').html(snapval.goblin);
+    $('#baloon').html(snapval.baloon);
+    $('#wizard').html(snapval.wizard);
+    $('#healer').html(snapval.healer);
+    $('#dragon').html(snapval.dragon);
+    $('#peka').html(snapval.peka);
+    $('#babyDragon').html(snapval.babydragon);
+    $('#miner').html(snapval.miner);
+    
     $("#avgper").html((averagePercent/snapval.percentages.length).toFixed(2));          // set the percentage to the average percentage to 2 desimals
     $('#stars').html(snapval.stars);                                                    // set the stars to the database value
     $("#description").html(snapval.description);                                        // set the description
@@ -76,6 +90,14 @@ function reloadContent(user) {
     $('#editWallBreaker').val(snapval.wallbreaker);
     $('#editGiant').val(snapval.giant);
     $('#editGoblin').val(snapval.goblin);
+    $('#editBaloon').val(snapval.baloon);
+    $('#editWizard').val(snapval.wizard);
+    $('#editHealer').val(snapval.healer);
+    $('#editDragon').val(snapval.dragon);
+    $('#editPeka').val(snapval.peka);
+    $('#editBabyDragon').val(snapval.babydragon);
+    $('#editMiner').val(snapval.miner);
+    
     $("#editStars").val(snapval.stars);                                                 // set the form for editing stars to the star value
     $("#editDescription").val(snapval.description);                                     // set the form for editing description to the description value
 
