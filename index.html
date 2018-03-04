@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clan Tracker</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  </head>
+  <body>
+    
+    <nav>
+      <table id="people">
+        <tr><th>People</th></tr>
+      </table>
+    </nav>
+    
+    <content>
+      <h1 id="person"></h1>
+      <table>
+        <tr>
+          <td>Town Hall Level: <span id="townHall"></span></td>
+          <td>Stars: <span id="stars"></span></td>
+          <td>Average Percentage: <span id="avgper"></span></td>
+          <td>Description: <span id="description"></span></td>
+          <td>Warnings: <span id="warnings"></span></td>
+        </tr>
+        <tr>
+          <td>Barbarian: <span id="barbarian"></span></td>
+          <td>Archer: <span id="archer"></span></td>
+          <td>Giant: <span id="giant"></span></td>
+          <td>Goblin: <span id="goblin"></span></td>
+          <td>Wall Breaker: <span id="wallBreaker"></span></td>
+        </tr>
+      </table>
+      <hr />
+      <form method="post" id="edit">
+        <table>
+          <tr>
+            <td>Town Hall Level:<br /><input type="number" id="editTownHall" value="0"></td>
+            <td>Stars:<br /><input type="number" id="editStars" value="0"></td>
+            <td>Percentages:<br /><input type="number" id="percent1" value="" max="100"><br /><input type="number" id="percent2" value="" max="100"></td>
+            <td>Description:<br /><textarea id="editDescription"></textarea></td>
+            <td>Warnings:<br /><input type="text" id="editWarnings" value="0"></td>
+          </tr>
+          <tr>
+            <td>Barbarian:<br /><input type="number" id="editBarbarian" value="0"></td>
+            <td>Archer:<br /><input type="number" id="editArcher" value="0"></td>
+            <td>Giant:<br /><input type="number" id="editGiant" value="0"></td>
+            <td>Goblin:<br /><input type="number" id="editGoblin" value="0"></td>
+            <td>Wall Breaker:<br /><input type="number" id="editWallBreaker" value="0"></td>
+          </tr>
+        </table>
+        <input type="submit" name="submit">
+      </form>
+    </content>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+nav {
+  float: left;
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  color: white;
+}
+table {
+  width: 100%;
+  text-align: left;
+}
+.users:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+content {
+  float: left;
+  width: 80%;
+}
+p, h1 {
+  padding-left: 5px;
+}
