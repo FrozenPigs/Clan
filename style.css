@@ -12,12 +12,18 @@ nav {
 table{
   width: 100%;
   text-align: left;
-  border: 1px solid black;
+}
+input[type=number] {
+  width: 20px;
+}
+#percent1, #percent2 {
+  width:35px;
 }
 
-input {
-  width:100%;
+#editStars {
+  width: 40px;
 }
+
 .users:hover {
   background-color: grey;
   cursor: pointer;
