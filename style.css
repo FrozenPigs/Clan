@@ -14,7 +14,7 @@ table{
   text-align: left;
 }
 input[type=number] {
-  width: 20px;
+  width: 9%;
 }
 #percent1, #percent2 {
   width:35px;
